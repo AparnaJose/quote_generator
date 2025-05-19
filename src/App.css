@@ -1,0 +1,99 @@
+/* Overall App Styling */
+.App {
+  text-align: center;
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+  min-height: 100vh;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  /* 👇 This is the magic line */
+  transition: background 1s ease-in-out;
+}
+
+
+/* Quote Box with Glassmorphism */
+.quote-box {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 2rem 3rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 2rem auto;
+  transition: transform 0.3s ease;
+}
+
+.quote-box:hover {
+  transform: scale(1.02);
+}
+
+/* Text Styling */
+.quote-text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+.quote-author {
+  font-style: italic;
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+}
+
+/* Button Styling */
+.new-quote-btn {
+  background: #fff;
+  color: #2ebf91;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.new-quote-btn:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+/* Loader Spinner */
+.loader {
+  border: 6px solid rgba(255, 255, 255, 0.2);
+  border-top: 6px solid #ffffff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  animation: spin 1s linear infinite;
+  margin: 2rem auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Error Message */
+.error-message {
+  color: #ffdddd;
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
