@@ -2,7 +2,7 @@
 
 A sleek and simple React app that fetches and displays random quotes to inspire, amuse, or energize your day. Built with React, animated with Framer Motion, and soon to include categorized quotes like motivation, humor, and tech!
 
-🚀 [Live Demo](https://vercel.com/aparna-joses-projects-f8469097/quote-generator)
+🚀 [Live Demo](https://quote-generator-eight-ecru.vercel.app/)
 
 ---
 
@@ -56,8 +56,6 @@ Made with 💻 by Aparna Jose
 ---
 
 ## 📄 License
-
-## License
 
 This project is private and proprietary. Unauthorized use, reproduction, or distribution is prohibited. For permission or inquiries, contact Aparna Jose.
 
